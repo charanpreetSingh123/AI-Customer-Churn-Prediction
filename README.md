@@ -175,12 +175,10 @@ python src/train.py    # train, tune, evaluate, save model + figures
 
 | Name | Roll No. |
 |---|---|
-| Vishesh Kumar | 2330666 |
-| Ankita Kumari | 2330604 |
-| Aarohan | 2330607 |
 | Charanpreet Singh | 2330613 |
-
-**Guide:** Mr. Gourav (Assistant Professor), Department of Artificial Intelligence & Data Science, CGC University, Mohali | Academic Year 2026-2027
+| Aarohan | 2330604 |
+| Ankita Kumari | 2330607 |
+| Vishesh Kumar | 2330666 |
 
 ---
 
