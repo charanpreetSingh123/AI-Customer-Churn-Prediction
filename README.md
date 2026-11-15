@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📉 AI-Based Customer Churn Prediction
+# AI-Based Customer Churn Prediction
 
 **Predict which customers are about to leave, how likely it is, and why.**
 
@@ -19,35 +19,35 @@ A complete machine-learning pipeline that uses a tuned **XGBoost** model with **
 
 ---
 
-## 📌 Table of contents
+## Contents
 
-- [Overview](#-overview)
-- [Key results](#-key-results)
-- [Dashboard](#️-dashboard)
-- [How it works](#️-how-it-works)
-- [Dataset](#-dataset)
-- [Quick start](#-quick-start)
-- [Project structure](#-project-structure)
-- [Team](#-team)
-- [References](#-references)
+- [Overview](#overview)
+- [Key results](#key-results)
+- [Dashboard](#dashboard)
+- [How it works](#how-it-works)
+- [Dataset](#dataset)
+- [Quick start](#quick-start)
+- [Project structure](#project-structure)
+- [Team](#team)
+- [References](#references)
 
 ---
 
-## 🔍 Overview
+## Overview
 
 Losing a customer costs far more than keeping one, and the warning signs are easy to miss in large volumes of account data. This project classifies telecom customers as **likely to churn** or **likely to stay**:
 
-- ✅ Gives a **churn probability** and a **Low / Medium / High** risk category for each customer
-- ✅ Explains every prediction with **SHAP**, showing which factors push a customer toward leaving
-- ✅ Handles **class imbalance** (only 26.5 % of customers churn) with class weighting
-- ✅ Compares XGBoost against **Logistic Regression, Decision Tree and Random Forest** baselines
-- ✅ Judges models on **precision, recall, F1 and ROC-AUC**, not misleading accuracy alone
+- Gives a **churn probability** and a **Low / Medium / High** risk category for each customer
+- Explains every prediction with **SHAP**, showing which factors push a customer toward leaving
+- Handles **class imbalance** (only 26.5 % of customers churn) with class weighting
+- Compares XGBoost against **Logistic Regression, Decision Tree and Random Forest** baselines
+- Judges models on **precision, recall, F1 and ROC-AUC**, not misleading accuracy alone
 
 > Built as **Project-II (AIML, 7th Semester)** at the School of Engineering & Technology, CGC University, Mohali.
 
 ---
 
-## 🏆 Key results
+## Key results
 
 Evaluated on a held-out, stratified test set of **1,409 customers** (374 churned):
 
@@ -73,22 +73,22 @@ Evaluated on a held-out, stratified test set of **1,409 customers** (374 churned
 
 ---
 
-## 🖥️ Dashboard
+## Dashboard
 
-| Batch prediction from CSV | Model performance |
+| Batch scoring | Model performance |
 |---|---|
 | <img src="docs/screenshots/batch.png" alt="Batch prediction page"> | <img src="docs/screenshots/performance.png" alt="Model performance page"> |
 
 The dashboard has four pages:
 
-1. **Predict a customer:** enter details and get the churn probability, risk category and top SHAP factors.
-2. **Batch prediction (CSV):** upload many customers and download a ranked risk list.
+1. **Single customer:** enter details and get the churn probability, risk category and top SHAP factors.
+2. **Batch scoring:** upload many customers and download a ranked risk list.
 3. **Model performance:** comparison table, ROC curves, confusion matrices, feature importance and SHAP.
 4. **Data insights:** dataset facts and exploratory charts.
 
 ---
 
-## ⚙️ How it works
+## How it works
 
 ```mermaid
 flowchart LR
@@ -106,7 +106,7 @@ flowchart LR
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 [IBM Telco Customer Churn](https://github.com/IBM/telco-customer-churn-on-icp4d/blob/master/data/Telco-Customer-Churn.csv) (also on Kaggle as *Telco Customer Churn*).
 
@@ -120,7 +120,7 @@ flowchart LR
 
 ---
 
-## 🚀 Quick start
+## Quick start
 
 ```bash
 git clone https://github.com/charanpreetSingh123/AI-Customer-Churn-Prediction.git
@@ -144,10 +144,11 @@ python src/train.py    # train, tune, evaluate, save model + figures
 
 ---
 
-## 📁 Project structure
+## Project structure
 
 ```
 ├── app.py                      # Streamlit dashboard
+├── .streamlit/config.toml      # dark theme
 ├── requirements.txt
 ├── data/
 │   ├── Telco-Customer-Churn.csv
@@ -164,12 +165,13 @@ python src/train.py    # train, tune, evaluate, save model + figures
     ├── preprocess.py           # cleaning, feature engineering, encoders
     ├── eda.py                  # exploratory data analysis
     ├── train.py                # training, tuning, evaluation, SHAP
-    └── predict.py              # scoring, risk category, explanations
+    ├── predict.py              # scoring, risk category, explanations
+    └── style.py                # shared colour palette for charts
 ```
 
 ---
 
-## 👥 Team
+## Team
 
 | Name | Roll No. |
 |---|---|
@@ -178,11 +180,11 @@ python src/train.py    # train, tune, evaluate, save model + figures
 | Aarohan | 2330607 |
 | Charanpreet Singh | 2330613 |
 
-**Guide:** Mr. Gourav (Assistant Professor), Department of Artificial Intelligence & Data Science, CGC University, Mohali · Academic Year 2026–2027
+**Guide:** Mr. Gourav (Assistant Professor), Department of Artificial Intelligence & Data Science, CGC University, Mohali | Academic Year 2026-2027
 
 ---
 
-## 📚 References
+## References
 
 1. T. Chen and C. Guestrin, "XGBoost: A Scalable Tree Boosting System," *KDD*, 2016.
 2. A. Dal Pozzolo et al., "Calibrating Probability with Undersampling for Unbalanced Classification," *IEEE SSCI*, 2015.
@@ -192,6 +194,6 @@ python src/train.py    # train, tune, evaluate, save model + figures
 
 <div align="center">
 
-⭐ If you found this project useful, consider giving it a star!
+If you found this project useful, consider giving it a star.
 
 </div>

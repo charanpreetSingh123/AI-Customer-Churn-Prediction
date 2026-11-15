@@ -4,7 +4,7 @@
   "test_churn_cases": 374,
   "best_params": {
     "subsample": 0.8,
-    "scale_pos_weight": 2.076421404682274,
+    "scale_pos_weight": 2.0764,
     "n_estimators": 300,
     "min_child_weight": 1,
     "max_depth": 4,
