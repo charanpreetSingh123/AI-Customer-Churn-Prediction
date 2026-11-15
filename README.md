@@ -28,7 +28,6 @@ A complete machine-learning pipeline that uses a tuned **XGBoost** model with **
 - [Dataset](#dataset)
 - [Quick start](#quick-start)
 - [Project structure](#project-structure)
-- [Team](#team)
 - [References](#references)
 
 ---
@@ -42,8 +41,6 @@ Losing a customer costs far more than keeping one, and the warning signs are eas
 - Handles **class imbalance** (only 26.5 % of customers churn) with class weighting
 - Compares XGBoost against **Logistic Regression, Decision Tree and Random Forest** baselines
 - Judges models on **precision, recall, F1 and ROC-AUC**, not misleading accuracy alone
-
-> Built as **Project-II (AIML, 7th Semester)** at the School of Engineering & Technology, CGC University, Mohali.
 
 ---
 
@@ -168,17 +165,6 @@ python src/train.py    # train, tune, evaluate, save model + figures
     ├── predict.py              # scoring, risk category, explanations
     └── style.py                # shared colour palette for charts
 ```
-
----
-
-## Team
-
-| Name | Roll No. |
-|---|---|
-| Charanpreet Singh | 2330613 |
-| Aarohan | 2330604 |
-| Ankita Kumari | 2330607 |
-| Vishesh Kumar | 2330666 |
 
 ---
 
