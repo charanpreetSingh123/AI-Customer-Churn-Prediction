@@ -1,0 +1,72 @@
+{
+  "train_size": 5634,
+  "test_size": 1409,
+  "test_churn_cases": 374,
+  "best_params": {
+    "subsample": 0.8,
+    "scale_pos_weight": 2.076421404682274,
+    "n_estimators": 300,
+    "min_child_weight": 1,
+    "max_depth": 4,
+    "learning_rate": 0.03,
+    "colsample_bytree": 0.6
+  },
+  "cv_f1": 0.6357,
+  "cv_roc_auc": 0.8479,
+  "comparison": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.7324,
+      "precision": 0.4975,
+      "recall": 0.7861,
+      "f1": 0.6093,
+      "roc_auc": 0.8422
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.7367,
+      "precision": 0.5026,
+      "recall": 0.7807,
+      "f1": 0.6115,
+      "roc_auc": 0.8243
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.7608,
+      "precision": 0.5339,
+      "recall": 0.7781,
+      "f1": 0.6333,
+      "roc_auc": 0.8399
+    },
+    {
+      "model": "XGBoost (tuned)",
+      "accuracy": 0.7729,
+      "precision": 0.5544,
+      "recall": 0.7353,
+      "f1": 0.6322,
+      "roc_auc": 0.8443
+    }
+  ],
+  "xgb_confusion_matrix": [
+    [
+      814,
+      221
+    ],
+    [
+      99,
+      275
+    ]
+  ],
+  "top_features_shap": {
+    "IsMonthToMonth": 0.4593000113964081,
+    "Contract": 0.4390000104904175,
+    "tenure": 0.3424000144004822,
+    "OnlineSecurity": 0.2522999942302704,
+    "InternetService": 0.20340000092983246,
+    "PaymentMethod": 0.19599999487400055,
+    "TechSupport": 0.19470000267028809,
+    "MonthlyCharges": 0.17299999296665192,
+    "TotalCharges": 0.1720000058412552,
+    "AvgMonthlyCharge": 0.15109999477863312
+  }
+}

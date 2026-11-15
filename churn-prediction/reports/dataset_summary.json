@@ -1,0 +1,10 @@
+{
+  "records_raw": 7043,
+  "columns_raw": 21,
+  "records_after_cleaning": 7043,
+  "duplicate_customer_ids": 0,
+  "blank_TotalCharges_filled_with_0": 11,
+  "churned_customers": 1869,
+  "retained_customers": 5174,
+  "churn_rate_percent": 26.54
+}
